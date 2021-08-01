@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Tic tac toe</title>
+    </head>
+    <body>
+        <div class ="gameScore">
+            <h4 id="xScore">Player 1 Score: <span id ="player1Score"></span></h4>
+            <h4 id="oScore">Player 2 Score: <span id ="player2Score"></span></h4>
+        </div>
+        <div class="playersTurn">
+            <p class="text-center" style="font-size: 30px;font-weight: 800;">It's <span id="player"></span> 's turn!</p>
+        </div>
+        
+        <div class ="container">
+            <h1>Let's Play</h1>
+            <button onClick ="resetGame();">Restart</button>
+            <div id= "game-layout">
+                <div class ="gameCell" id ="cell0"></div>
+                <div class ="gameCell" id ="cell1"></div>
+                <div class ="gameCell" id ="cell2"></div>
+                <div class ="gameCell" id ="cell3"></div>
+                <div class ="gameCell" id ="cell4"></div>
+                <div class ="gameCell" id ="cell5"></div>
+                <div class ="gameCell" id ="cell6"></div>
+                <div class ="gameCell" id ="cell7"></div>
+                <div class ="gameCell" id ="cell8"></div>
+            </div>
+            <div class="text-center" style="padding: 40px">
+                <span id="gameState"></span>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
